@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    con = mysql.connector.connect(user='<user>', password='<password>', host='194.47.143.131',
+    con = mysql.connector.connect(user='<user>', password='<password>', host='<host ip>',
                                   database='<database name>')
 
     cursor = con.cursor()
@@ -22,7 +22,7 @@ def index():
 
 @app.route('/post/<postId>')
 def edit_post(postId):
-    con = mysql.connector.connect(user='<user>', password='<password>', host='194.47.143.131',
+    con = mysql.connector.connect(user='<user>', password='<password>', host='<host ip>',
                                   database='<database name>')
 
     cursor = con.cursor()
@@ -37,7 +37,7 @@ def edit_post(postId):
 @app.route('/update_post', methods=['POST'])
 def update():
     print("update post...")
-    con = mysql.connector.connect(user='<user>', password='<password>', host='194.47.143.131',
+    con = mysql.connector.connect(user='<user>', password='<password>', host='<host ip>',
                                   database='<database name>')
 
     cursor = con.cursor()
