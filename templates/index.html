@@ -18,8 +18,8 @@
       <p></p>
       <ul>
             {% for post in blog_posts %}
-            <li>{{ post }}</li>
-          {% endfor %}
+            <li>{{ post[3] }} - <h3> {{ post[1] }} </h3></li>
+            {% endfor %}
       </ul>
     </div>
     <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
