@@ -17,7 +17,9 @@
       <p>Index</p>
       <p></p>
       <ul>
-
+            {% for post in blog_posts %}
+            <li>{{ post }}</li>
+          {% endfor %}
       </ul>
     </div>
     <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>

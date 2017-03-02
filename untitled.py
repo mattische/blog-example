@@ -15,7 +15,7 @@ def index():
     result = cursor.fetchall()
     cursor.close()
     con.close()
-    print(result)
+
     return render_template("index.html", title="Index page", blog_posts=result)
 
 
